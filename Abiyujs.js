@@ -27,7 +27,7 @@ function hitungTransaksi() {
   let potongan = 0;
 
   if (totalBelanja >= 400000) {
-    potongan = totalBelanja * 0.1; // Diskon 10%
+    potongan = totalBelanja * 0.1; 
   } else {
     potongan = 0;
   }
