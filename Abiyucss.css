@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  border-top: 5px solid #667eea;
+}
+
+h2 {
+  text-align: center;
+  color: #667eea;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: #f8f9ff;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-hitung {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.btn-hitung:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.btn-reset:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+}
+
+.card-hasil {
+  margin-top: 25px;
+  padding: 15px;
+  border: 2px solid #ffb800;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff9e6 0%, #fffdf0 100%);
+  display: none;
+  box-shadow: 0 5px 15px rgba(255, 184, 0, 0.15);
+}
+
+.card-hasil h3 {
+  margin-top: 0;
+  color: #e67e22;
+  text-align: center;
+  border-bottom: 3px solid #ffb800;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.hasil-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.hasil-item.total {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #e67e22;
+  border-top: 2px solid #ffb800;
+  padding-top: 8px;
+  margin-top: 8px;
+}
